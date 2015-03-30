@@ -90,6 +90,10 @@ Now when `localhost:8080/hello` is accessed, this will display this:
 
 ![Alt text](Hello.jpg "Hello, World!")
 
+If we try to access a page that doesn't exist we get this:
+
+![Alt text](Error.jpg "Error!")
+
 Using a helper function, we can make an easy for for creating our own HTML form page on the server:
 
 ```
