@@ -37,7 +37,7 @@ First the server listens for a connection on the defined port. For this example 
 
 ```
 
-The `handle` function will handle incoming requests made and parse the HTTP header sent, and send a reply.
+The server can be started by entering the command `(serve 8080)`. The `handle` function will handle incoming requests made and parse the HTTP header sent, and send a reply.
 
 ```
 (define (handle in out)
@@ -88,7 +88,7 @@ Now, we can call the dispatcher to make a new page like so:
 
 Now when `localhost:8080/hello` is accessed, this will display this:
 
-*image*
+![Alt text](Hello.jpg "Square(x) Plot Window.")
 
 Using a helper function, we can make an easy for for creating our own HTML form page on the server:
 
@@ -122,6 +122,6 @@ This can be called like this in racket:
 
 And now when we visit `localhost:8080/number`, we see the following:
 
-*image*
+![Alt text](Number.jpg "Square(x) Plot Window.")
 
 Where we can enter a number to the server and then the server could do something with it. I quite suprised by the ease of setting up an HTTP server in racket (some things, like `custodian` and methods of `threads` in Racket were new/confusing at first), and the nice functionality of net/url to translate strings into HTML. This could definitely be useful for the project, maybe doing some network communications or something of the like.
